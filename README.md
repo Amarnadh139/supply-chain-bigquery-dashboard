@@ -78,39 +78,41 @@ supply_chain_dashboard/
 
 4. Run the dashboard:
 
-   The dashboard will be available at: http://localhost:8501
+       The dashboard will be available at: http://localhost:8501
     
 2️⃣ Running in Google Colab
 1. Install dependencies:
 
-!pip install streamlit pandas plotly google-cloud-bigquery pyngrok -q
-Upload files:
+       !pip install streamlit pandas plotly google-cloud-bigquery pyngrok -q
+       Upload files:
 
 2. Upload files:
-from google.colab import files
-files.upload()
+
+       from google.colab import files
+       files.upload()
 
 3. Authenticate with Google Cloud:
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "supplychaindata-5d6ab00d6911.json"
-from google.cloud import bigquery
-client = bigquery.Client()
-print(" BigQuery authentication successful!")
+
+       import os
+       os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "supplychaindata-5d6ab00d6911.json"
+       from google.cloud import bigquery
+       client = bigquery.Client()
+       print(" BigQuery authentication successful!")
 
 4.  Add ngrok authentication token:
-!ngrok config add-authtoken YOUR_NGROK_TOKEN
+  
+        !ngrok config add-authtoken YOUR_NGROK_TOKEN
 
 5.   Run Streamlit in background:
-!nohup streamlit run app.py &>/dev/null &
+
+         !nohup streamlit run app.py &>/dev/null &
 
 6.  Get public URL:
-from pyngrok import ngrok
-print(ngrok.connect(8501))
+   
+        from pyngrok import ngrok
+        print(ngrok.connect(8501))
 
 
-
-Project Screenshots
-Main Dashboard
 
 
 
@@ -121,7 +123,9 @@ BigQuery Authentication Failed → Ensure your JSON key file path is correct and
 
 Port Already in Use → Change the port in the Streamlit command:
 
-streamlit run app.py --server.port 8502
+    streamlit run app.py --server.port 8502
+
+    
 👨‍💻 Author
 Vineetha.S
 Email: vineetha143sedje@gmail.com
