@@ -7,7 +7,7 @@ It provides insights into **lead time, order cycle time, inventory turnover, and
 
 ---
 
-## 📊 Project Overview
+##  Project Overview
 This dashboard is designed to:
 - Fetch **real-time data** from Google BigQuery
 - Display **important supply chain metrics**
@@ -18,7 +18,7 @@ It is ideal for supply chain managers, analysts, and businesses that want to **m
 
 ---
 
-## 🛠 Tools & Technologies Used
+##  Tools & Technologies Used
 - **Python**                           (Backend logic & data processing)
 - **Streamlit**                        (Web application framework)
 - **Google BigQuery**                  (Cloud database for data storage)
@@ -29,7 +29,7 @@ It is ideal for supply chain managers, analysts, and businesses that want to **m
 
 ---
 
-## 📂 File Structure
+##  File Structure
 supply_chain_dashboard/
 │
 ├── app.py                                  # Main Streamlit app
@@ -40,7 +40,7 @@ supply_chain_dashboard/
 
 ---
 
-## ⚙ Features
+##  Features
 1. **KPI Metrics**
    - Average Lead Time
    - Order Cycle Time
@@ -61,9 +61,9 @@ supply_chain_dashboard/
 
 ---
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
-### **1️⃣ Local Setup**
+### **1️ Local Setup**
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/supply_chain_dashboard.git
@@ -80,7 +80,7 @@ supply_chain_dashboard/
 
        The dashboard will be available at: http://localhost:8501
     
-2️⃣ Running in Google Colab
+2️ Running in Google Colab
 1. Install dependencies:
 
        !pip install streamlit pandas plotly google-cloud-bigquery pyngrok -q
@@ -126,7 +126,7 @@ Port Already in Use → Change the port in the Streamlit command:
     streamlit run app.py --server.port 8502
 
     
-👨‍💻 Author
+ Author
 
 Vineetha.S
 Email: vineetha143sedje@gmail.com
