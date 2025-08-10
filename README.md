@@ -1,6 +1,6 @@
 # Supply Chain Data Integration System
 
-# 📦 Supply Chain Analytics Dashboard
+#  Supply Chain Analytics Dashboard
 
 An interactive **Streamlit-based dashboard** to visualize and monitor **Supply Chain KPIs** using **Google BigQuery** as the data source.  
 It provides insights into **lead time, order cycle time, inventory turnover, and on-time delivery rates**, along with **sales and inventory analysis** through charts.
